@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=League+Spartan:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <title>Calculator</title>
+  </head>
+  <body>
+    <!-- Conteneur principal de la page -->
+    <div class="container">
+      <!-- En-tête de la page avec le titre "Calculator" et les options de thème -->
+      <div class="header">
+        <h1>Calculator</h1>
+        <div class="theme">
+          <span>Theme</span>
+          <!-- Options de thème avec les numéros et les indicateurs -->
+          <div class="theme-options">
+            <div class="theme-options-numbers">
+              <span>1</span>
+              <span>2</span>
+              <span>3</span>
+            </div>
+            <div class="theme-options-indicators">
+              <!-- Indicateurs de thème avec des identifiants uniques -->
+              <span class="indicator" id="indicator-1"></span>
+              <span class="indicator" id="indicator-2"></span>
+              <span class="indicator" id="indicator-3"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Zone d'affichage du résultat du calcul -->
+      <div class="displayer">
+        <span>0</span>
+      </div>
+      <!-- Boutons de contrôle pour la calculatrice -->
+      <div class="controls">
+        <button id="fiveBtn">
+          <span>7</span>
+        </button>
+        <button id="eightBtn">
+          <span>8</span>
+        </button>
+        <button id="nineBtn">
+          <span>9</span>
+        </button>
+        <button id="deleteBtn">
+          <span>DEL</span>
+        </button>
+        <button id="fourBtn">
+          <span>4</span>
+        </button>
+        <button id="fiveBtn">
+          <span>5</span></button
+        ><button id="sixBtn">
+          <span>6</span></button
+        ><button id="dividerBtn">
+          <span>/</span></button
+        ><button id="oneBtn">
+          <span>1</span></button
+        ><button id="twoBtn"><span>2</span></button
+        ><button id="threeBtn">
+          <span>3</span></button
+        ><button id="minusBtn">
+          <span>-</span></button
+        ><button id="dotBtn">
+          <span>.</span></button
+        ><button id="zeroBtn">
+          <span>0</span></button
+        ><button id="plusBtn">
+          <span>+</span></button
+        ><button id="multiplyBtn">
+          <span>x</span></button
+        ><button id="resetBtn">
+          <span>RESET</span></button
+        ><button id="equalBtn">=</button>
+      </div>
+    </div>
+    <!-- Scripts JavaScript externes pour le thème et l'application de la calculatrice -->
+    <script src="theme.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

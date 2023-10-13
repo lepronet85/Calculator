@@ -1,0 +1,122 @@
+/* Bloc de réinitialisation des marges et des espacements par défaut */
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Bloc de style du corps de la page */
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'DM Sans', sans-serif;
+  font-family: 'League Spartan', sans-serif;
+}
+
+/* Bloc de style du conteneur principal de la page */
+.container {
+  width: 375px;
+  height: 500px;
+}
+
+/* Bloc de style de l'en-tête de la page */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Bloc de style de la section de thème */
+.theme {
+  display: flex;
+  align-items: flex-end;
+}
+
+/* Bloc de style des options de thème */
+.theme-options {
+  width: 40px;
+  margin-left: 10px;
+}
+
+/* Bloc de style des indicateurs de thème */
+.theme-options .theme-options-numbers span {
+  margin: 0 1px;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+/* Bloc de style des indicateurs de thème */
+.theme-options .theme-options-indicators,
+.theme-options .theme-options-numbers {
+  display: flex;
+  justify-content: space-between;
+  padding: 1px;
+  border-radius: 9px;
+}
+
+/* Bloc de style des indicateurs de thème avec des identifiants uniques */
+#indicator-1,
+#indicator-2,
+#indicator-3 {
+  cursor: pointer;
+  display: block;
+  width: 7px;
+  height: 7px;
+  border-radius: 100%;
+}
+
+/* Bloc de style spécifique pour les indicateurs 2 et 3 */
+#indicator-2,
+#indicator-3 {
+  opacity: 0;
+}
+
+/* Bloc de style de la zone d'affichage du résultat du calcul */
+.displayer {
+  box-sizing: border-box;
+  height: 80px;
+  border-radius: 9px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 10px;
+  overflow: hidden;
+}
+
+/* Bloc de style du texte dans la zone d'affichage */
+.displayer {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+/* Bloc de style des boutons de contrôle dans la calculatrice */
+.controls {
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 9px;
+}
+
+/* Bloc de style des boutons de la calculatrice */
+.controls button {
+  box-sizing: border-box;
+  width: calc(90%/4);
+  font-size: 32px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  margin: 5px 0;
+  font-weight: 700;
+}
+
+/* Bloc de style spécifique pour les boutons "RESET" et "=" */
+#resetBtn,
+#equalBtn {
+  width: calc(90%/2);
+}
